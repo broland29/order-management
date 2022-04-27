@@ -42,8 +42,6 @@ public class GenericDAO<T extends Model>{
                         " WHERE "                               +       //    FROM clients
                         fieldsToString(filter, " AND ") ;       //   WHERE name = 'Johnny Test' AND phone = '0722038495'
 
-        System.out.println(searchStatementBuilder);
-
         return (int)executeAndGetValue(searchStatementBuilder,"int");
     }
 

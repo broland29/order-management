@@ -12,8 +12,7 @@ public class Product implements Model {
 
 
     /** Empty constructor - DO NOT REMOVE - NEEDED FOR REFLECTION */
-    public Product() {
-    }
+    public Product() {}
 
 
     /** Basic constructor */
@@ -39,6 +38,10 @@ public class Product implements Model {
 
     /** Getter for price */
     public float getPrice(){return price;}
+
+
+    /** Setter for productID - DO NOT REMOVE - USED IN createObjects */
+    public void setProductID(int productID) {this.productID = productID;}
 
 
     /** Setter for name */

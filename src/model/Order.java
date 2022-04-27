@@ -13,7 +13,7 @@ public class Order implements Model {
     private int clientID;
     private int productID;
     private int quantity;
-    private Date pickUpBy;
+    private Date pickupBy;
 
 
     /** Empty constructor - DO NOT REMOVE - NEEDED FOR REFLECTION */
@@ -26,32 +26,48 @@ public class Order implements Model {
         this.clientID = clientID;
         this.productID = productID;
         this.quantity = quantity;
-        this.pickUpBy = pickupBy;
+        this.pickupBy = pickupBy;
     }
 
 
     /** Getter for orderID */
-    public int getOrderID() {
-        return orderID;
-    }
+    public int getOrderID() {return orderID;}
+
+
+    /** Getter for clientID - DO NOT REMOVE - USED IN createObjects */
+    public int getClientID() {return clientID;}
+
+
+    /** Getter for productID - DO NOT REMOVE - USED IN createObjects */
+    public int getProductID() {return productID;}
 
 
     /** Getter for quantity */
-    public int getQuantity() {
-        return quantity;
-    }
+    public int getQuantity() {return quantity;}
 
 
     /** Getter for pickupBy */
-    public Date getPickUpBy() {
-        return pickUpBy;
-    }
+    public Date getPickupBy() {return pickupBy;}
+
+
+    /** Setter for orderID - DO NOT REMOVE - USED IN createObjects */
+    public void setOrderID(int orderID) {this.orderID = orderID;}
+
+
+    /** Setter for clientID - DO NOT REMOVE - USED IN createObjects */
+    public void setClientID(int clientID) {this.clientID = clientID;}
+
+
+    /** Setter for productID - DO NOT REMOVE - USED IN createObjects */
+    public void setProductID(int productID) {this.productID = productID;}
 
 
     /** Setter for quantity */
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
+    public void setQuantity(int quantity) {this.quantity = quantity;}
+
+
+    /** Setter for pickUpBy - DO NOT REMOVE - USED IN createObjects */
+    public void setPickupBy(Date pickupBy) {this.pickupBy = pickupBy;}
 
 
     /** Overridden toString method, showing data of interest*/

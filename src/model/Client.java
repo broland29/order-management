@@ -26,12 +26,20 @@ public class Client implements Model {
     public int getClientID() {return clientID;}
 
 
-    /** Getter for name */
+     /** Getter for name */
     public String getName() {return name;}
 
 
     /** Getter for phone */
     public String getPhone() {return phone;}
+
+
+    /** Setter for clientID - DO NOT REMOVE - USED IN createObjects */
+    public void setClientID(int clientID) {this.clientID = clientID;}
+
+
+    /** Setter for phone - DO NOT REMOVE - USED IN createObjects */
+    public void setPhone(String phone) {this.phone = phone;}
 
 
     /** Setter for name */

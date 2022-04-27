@@ -15,7 +15,7 @@ public class OrderValidator implements Validator<Order>{
     @Override
     public void validateUpdate(Order order) throws InvalidInputException {
         int quantity = order.getQuantity();
-        Date pickupBy = order.getPickUpBy();
+        Date pickupBy = order.getPickupBy();
 
         if (quantity <= 0)
             throw new InvalidInputException("Invalid QUANTITY! (should be >= 1)");

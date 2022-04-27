@@ -86,7 +86,7 @@ public class OrderBL {
      * @param day day
      * @return a string of form YYYY-MM-DD based on the given inputs
      */
-    public static String convertToJDBCDateFormat(String year, String month, String day){
+        public static String convertToJDBCDateFormat(String year, String month, String day){
         String aux;
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(year);
